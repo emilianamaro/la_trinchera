@@ -1,0 +1,477 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Cervecería La Trinchera</title>
+<meta name="description" content="Cervecería La Trinchera en Torrent: hamburguesas, tapas y carnes a la brasa. Cervezas de grifo y reservas por TheFork o WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Playfair+Display:wght@700;800&family=Archivo:wght@400;500;600&family=Archivo+Narrow:wght@500;600;700&display=swap">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Cervecería La Trinchera","servesCuisine":["Hamburguesas","Tapas","Carnes a la brasa"],"telephone":"+34961089941","address":{"@type":"PostalAddress","streetAddress":"Plaça de la Llibertat, 13","addressLocality":"Torrent","addressRegion":"Valencia","postalCode":"46900","addressCountry":"ES"},"acceptsReservations":"True","priceRange":"€€"}
+</script>
+<style>
+/* Layout: the facade as a page. A green bottle-glass ground, cream panels, and every
+   title drawn like the logo: red slab letters on a cream ribbon with notched ends,
+   a dark green band underneath. Gold trim as the only ornament. */
+:root{
+  --green:#163a2d;        /* facade paint */
+  --green-deep:#0e271e;   /* shadowed panels, ribbon edge */
+  --green-line:#2b5644;   /* panel edges */
+  --cream:#efe3c4;        /* ribbon, paper */
+  --cream-dim:#c9bd9f;    /* secondary text on green */
+  --red:#a5302a;          /* logo lettering */
+  --gold:#c9a255;         /* brass trim */
+  --ink:#231c15;          /* text on cream */
+  --wa:#1f9d55;           /* WhatsApp action */
+  --f-logo:"Alfa Slab One","Rockwell","Roboto Slab",Georgia,serif;
+  --f-display:"Playfair Display",Georgia,"Times New Roman",serif;
+  --f-body:"Archivo",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-label:"Archivo Narrow","Arial Narrow",system-ui,sans-serif;
+  --wrap:1120px;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{background:var(--green);color:var(--cream);font:400 1rem/1.6 var(--f-body);padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+@media (min-width:760px){body{padding-bottom:0}}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:16px}
+@media (min-width:760px){.wrap{padding-inline:32px}}
+h1,h2,h3{text-wrap:balance;margin:0;font-weight:400}
+.label{font:600 .78rem/1.2 var(--f-label);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+
+/* Logo ribbon: dark green edge, cream fill, notched ends, red slab lettering,
+   and the dark band with the small caps line underneath */
+.ribbon{display:inline-flex;flex-direction:column;align-items:center;max-width:100%;filter:drop-shadow(0 8px 14px rgba(0,0,0,.35))}
+.ribbon .r-edge{--n:20px;background:var(--green-deep);padding:3px;clip-path:polygon(0 0,100% 0,calc(100% - var(--n)) 50%,100% 100%,0 100%,var(--n) 50%);max-width:100%}
+.ribbon .r-fill{display:block;background:var(--cream);clip-path:polygon(0 0,100% 0,calc(100% - var(--n) + 2px) 50%,100% 100%,0 100%,calc(var(--n) - 2px) 50%);padding:.16em calc(var(--n) + .55em) .2em;font:400 clamp(1.6rem,4.6vw,2.6rem)/1.08 var(--f-logo);letter-spacing:.03em;text-transform:uppercase;color:var(--red);text-align:center;text-shadow:0 2px 0 rgba(90,20,15,.18)}
+.ribbon .r-sub{margin-top:-1px;background:var(--green-deep);color:var(--cream);font:700 clamp(.62rem,1.6vw,.76rem)/1 var(--f-label);letter-spacing:.18em;text-transform:uppercase;padding:7px 16px 6px;border:1px solid var(--gold);border-top:0;text-align:center;max-width:92%}
+.ribbon.big .r-edge{--n:clamp(22px,4vw,38px);padding:4px}
+.ribbon.big .r-fill{font-size:clamp(2.5rem,9vw,5.2rem);padding:.12em calc(var(--n) + .45em) .16em}
+.ribbon.big .r-sub{font-size:clamp(.68rem,1.8vw,.9rem);padding:9px 20px 8px}
+@media (max-width:500px){.ribbon .r-sub{letter-spacing:.08em;padding-inline:10px}}
+
+/* Header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--green-deep);border-bottom:1px solid var(--green-line)}
+.top .wrap{display:flex;align-items:center;gap:16px;min-height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;margin-right:auto}
+.brand img{width:44px;height:44px;border-radius:50%;box-shadow:0 0 0 2px var(--gold)}
+.brand span{font:400 1.12rem/1 var(--f-logo);letter-spacing:.04em;color:var(--cream);text-transform:uppercase}
+.nav{display:none;gap:22px}
+.nav a{font:600 .85rem/1 var(--f-label);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:var(--cream-dim)}
+.nav a:hover{color:var(--cream)}
+@media (min-width:860px){.nav{display:flex}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 .9rem/1 var(--f-label);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;padding:14px 20px;border:0;border-radius:3px;cursor:pointer}
+.btn-red{background:var(--red);color:var(--cream)}
+.btn-red:hover{background:#b8382f}
+.btn-line{background:transparent;color:var(--cream);box-shadow:inset 0 0 0 1.5px var(--gold)}
+.btn-line:hover{background:rgba(201,162,85,.12)}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{background:#23b061}
+.top .btn{padding:11px 16px;display:none}
+@media (min-width:760px){.top .btn{display:inline-flex}}
+
+/* Hero */
+.hero{padding-block:44px 56px}
+.hero .wrap{display:grid;gap:36px;align-items:center}
+@media (min-width:900px){.hero .wrap{grid-template-columns:1.05fr .95fr;gap:52px}}
+.hero .eyebrow{display:block;margin-bottom:16px}
+.hero p{max-width:34rem;color:var(--cream-dim);font-size:1.08rem;margin:26px 0 28px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px}
+.rating{display:flex;align-items:center;gap:10px;margin-top:26px;font:500 .9rem/1.3 var(--f-label);color:var(--cream-dim);letter-spacing:.04em}
+.rating b{color:var(--gold);font-size:1.05rem;letter-spacing:.1em}
+.photo{position:relative;margin:0}
+.photo img{display:block;width:100%;height:auto;border:6px solid var(--cream);outline:1px solid var(--gold);outline-offset:-12px}
+.photo figcaption{position:absolute;left:-10px;bottom:22px;background:var(--red);color:var(--cream);font:700 .78rem/1 var(--f-label);letter-spacing:.14em;text-transform:uppercase;padding:9px 12px}
+@media (max-width:500px){.photo figcaption{left:6px}}
+
+section{padding-block:64px}
+.sec-head{display:flex;flex-direction:column;align-items:flex-start;gap:16px;margin-bottom:34px}
+.sec-head p{margin:0;max-width:40rem;color:var(--cream-dim)}
+
+/* Grifos */
+#grifos{background:var(--green-deep);border-block:1px solid var(--green-line)}
+.taps-grid{display:grid;gap:36px}
+@media (min-width:900px){.taps-grid{grid-template-columns:1fr 1fr;align-items:center}}
+.taps-photo{margin:0}
+.taps-photo img{display:block;width:100%;height:auto;border-radius:2px}
+.taps{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.tap{display:grid;grid-template-columns:52px 1fr auto;gap:14px;align-items:center;padding:14px 16px;background:var(--green);border:1px solid var(--green-line)}
+.tap .disc{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font:400 1.15rem/1 var(--f-logo);box-shadow:inset 0 0 0 3px rgba(255,255,255,.25),0 0 0 2px var(--gold)}
+.tap h3{font:700 1.15rem/1.2 var(--f-display);color:var(--cream)}
+.tap p{margin:2px 0 0;font-size:.9rem;color:var(--cream-dim)}
+.tap .abv{font:700 1rem/1 var(--f-label);color:var(--gold);font-variant-numeric:tabular-nums;white-space:nowrap}
+.taps-note{margin:16px 0 0;font-size:.9rem;color:var(--cream-dim)}
+
+/* Carta */
+.menu-tools{display:flex;flex-direction:column;gap:14px;margin-bottom:26px}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}
+.tab{flex:none;font:700 .82rem/1 var(--f-label);letter-spacing:.1em;text-transform:uppercase;padding:11px 14px;background:transparent;color:var(--cream-dim);border:1px solid var(--green-line);border-radius:2px;cursor:pointer}
+.tab[aria-selected="true"]{background:var(--cream);color:var(--red);border-color:var(--cream)}
+.search{position:relative;max-width:420px}
+.search input{width:100%;font:500 1rem/1 var(--f-body);padding:13px 14px;background:var(--green-deep);color:var(--cream);border:1px solid var(--green-line);border-radius:2px}
+.search input::placeholder{color:var(--cream-dim)}
+.menu-card{background:var(--cream);color:var(--ink);padding:28px 22px;box-shadow:inset 0 0 0 6px var(--cream),inset 0 0 0 7px var(--gold)}
+@media (min-width:760px){.menu-card{padding:40px 44px}}
+.menu-card h3{font:400 1.8rem/1.1 var(--f-logo);color:var(--red);text-transform:uppercase;letter-spacing:.03em}
+.menu-card .note{margin:6px 0 18px;font-size:.9rem;color:#5d5244}
+.menu-group{margin-top:22px}
+.menu-group h4{margin:0 0 4px;font:700 .8rem/1 var(--f-label);letter-spacing:.14em;text-transform:uppercase;color:var(--green)}
+.items{list-style:none;margin:0;padding:0;display:grid;gap:0 48px}
+@media (min-width:860px){.items{grid-template-columns:1fr 1fr}}
+.item{padding:13px 0;border-bottom:1px dashed #cbbd99;min-width:0}
+.item .row{display:flex;align-items:baseline;gap:8px}
+.item .name{font:700 1.02rem/1.3 var(--f-display);letter-spacing:.01em}
+.item .dots{flex:1;border-bottom:2px dotted #b6a77f;transform:translateY(-4px);min-width:16px}
+.item .price{font:700 1rem/1 var(--f-label);font-variant-numeric:tabular-nums;color:var(--red);white-space:nowrap}
+.item .desc{margin:3px 0 0;font-size:.9rem;line-height:1.45;color:#5d5244}
+.item .tag{display:inline-block;margin-left:6px;font:700 .66rem/1 var(--f-label);letter-spacing:.1em;text-transform:uppercase;color:var(--cream);background:var(--green);padding:3px 5px;vertical-align:middle}
+.empty{padding:20px 0;color:#5d5244}
+.allergens{margin:22px 0 0;font-size:.85rem;color:#5d5244}
+
+/* Reservas */
+#reservas{background:var(--green-deep);border-block:1px solid var(--green-line)}
+.book{display:grid;gap:20px}
+@media (min-width:900px){.book{grid-template-columns:.8fr 1.2fr}}
+.panel{background:var(--green);border:1px solid var(--green-line);padding:26px 22px;display:flex;flex-direction:column;gap:14px;min-width:0}
+@media (min-width:760px){.panel{padding:32px}}
+.panel h3{font:700 1.5rem/1.15 var(--f-display);color:var(--cream)}
+.panel p{margin:0;color:var(--cream-dim)}
+.form{display:grid;gap:14px;grid-template-columns:1fr 1fr}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.field.full{grid-column:1/-1}
+@media (max-width:480px){.field{grid-column:1/-1}}
+.field label{font:600 .76rem/1 var(--f-label);letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.field input,.field select,.field textarea{font:500 1rem/1.3 var(--f-body);padding:12px;background:var(--green-deep);color:var(--cream);border:1px solid var(--green-line);border-radius:2px;width:100%}
+.field textarea{resize:vertical;min-height:70px}
+.form .btn{grid-column:1/-1}
+.err{grid-column:1/-1;margin:0;color:#f0a59c;font-size:.9rem}
+.phone{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:auto;padding-top:14px;border-top:1px solid var(--green-line)}
+.phone strong{font:700 1.25rem/1 var(--f-label);letter-spacing:.06em;user-select:all;font-variant-numeric:tabular-nums}
+.copy{font:600 .75rem/1 var(--f-label);letter-spacing:.1em;text-transform:uppercase;background:transparent;color:var(--gold);border:1px solid var(--gold);padding:7px 10px;border-radius:2px;cursor:pointer}
+
+/* Visita */
+.visit{display:grid;gap:28px}
+@media (min-width:860px){.visit{grid-template-columns:1fr 1fr 1fr}}
+.visit-photo{margin:0}
+.visit-photo img{display:block;width:100%;height:auto;max-height:520px;object-fit:cover;border:6px solid var(--cream)}
+.facts{display:grid;gap:22px;align-content:start;margin:0}
+.facts dt{margin-bottom:4px}
+.facts dd{margin:0;font-size:1.05rem}
+.quotes{display:grid;gap:16px;align-content:start}
+.quote{margin:0;padding:18px 20px;background:var(--green-deep);border:1px solid var(--green-line)}
+.quote p{margin:0 0 10px;font:italic 500 1.02rem/1.5 var(--f-display);color:var(--cream)}
+.quote footer{font:600 .78rem/1 var(--f-label);letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+
+/* Footer */
+.foot{background:var(--green-deep);border-top:1px solid var(--green-line);padding-block:40px}
+.foot .wrap{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
+.foot img{width:96px;height:96px;border-radius:50%;box-shadow:0 0 0 3px var(--gold)}
+.foot nav{display:flex;flex-wrap:wrap;gap:18px}
+.foot nav a{font:600 .8rem/1 var(--f-label);letter-spacing:.1em;text-transform:uppercase;color:var(--cream-dim);text-decoration:none}
+.foot small{display:block;width:100%;color:var(--cream-dim);font-size:.82rem}
+
+/* Mobile action bar */
+.bar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:var(--green-deep);border-top:1px solid var(--green-line)}
+.bar .btn{padding:14px 10px}
+@media (min-width:760px){.bar{display:none}}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio"><img src="img/logo.jpg" alt="Logotipo de La Trinchera" width="44" height="44"><span>La Trinchera</span></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#grifos">Cervezas</a>
+      <a href="#carta">Carta</a>
+      <a href="#reservas">Reservas</a>
+      <a href="#visitanos">Visítanos</a>
+    </nav>
+    <a class="btn btn-red" href="#reservas">Reservar mesa</a>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <span class="label eyebrow">Cervecería · Torrent</span>
+        <h1 class="ribbon big"><span class="r-edge"><span class="r-fill">La Trinchera</span></span><span class="r-sub">Hamburguesería · Tapas · Carnes a la brasa</span></h1>
+        <p>Hamburguesas de carne madurada, tapas de barra y carnes a la brasa, con cerveza bien tirada de grifo. En la Plaça de la Llibertat.</p>
+        <div class="ctas">
+          <a class="btn btn-red" href="#reservas">Reservar mesa</a>
+          <a class="btn btn-line" href="#carta">Ver la carta</a>
+        </div>
+        <div class="rating"><b>★★★★☆ 4,4</b><span>Más de 780 reseñas en Google</span></div>
+      </div>
+      <figure class="photo">
+        <img src="img/fachada.jpg" alt="Fachada verde de la Cervecería La Trinchera de noche, con la terraza montada" width="512" height="341">
+        <figcaption>Plaça de la Llibertat, 13</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="grifos">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="ribbon"><span class="r-edge"><span class="r-fill">Las birras</span></span><span class="r-sub">Cerveza de grifo</span></h2>
+        <p>Cinco grifos siempre a punto. Si no sabes cuál elegir, pregúntanos: te recomendamos la que mejor va con tu plato.</p>
+      </div>
+      <div class="taps-grid">
+        <figure class="taps-photo"><img src="img/grifos.jpg" alt="Barra con los grifos de Franziskaner, Leffe Rossa, Leffe Brune, Leffe Blonde y Budweiser, cada uno con su copa servida" width="850" height="567"></figure>
+        <div>
+          <ul class="taps" id="taps"></ul>
+          <p class="taps-note">Graduación según el fabricante. Pregunta por las cervezas de botella disponibles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="carta">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="ribbon"><span class="r-edge"><span class="r-fill">Nuestra carta</span></span><span class="r-sub">Burgers · Tapas · Brasa</span></h2>
+        <p>Producto natural, brasa de verdad y raciones para compartir. Las burgers y los platos de firma no admiten cambios: elige la tuya.</p>
+      </div>
+      <div class="menu-tools">
+        <div class="tabs" role="tablist" aria-label="Secciones de la carta" id="tabs"></div>
+        <div class="search"><input id="q" type="search" placeholder="Buscar un plato o ingrediente" aria-label="Buscar en la carta"></div>
+      </div>
+      <div class="menu-card" id="menu" role="tabpanel" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section id="reservas">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 class="ribbon"><span class="r-edge"><span class="r-fill">Reserva tu mesa</span></span><span class="r-sub">TheFork · WhatsApp · Teléfono</span></h2>
+        <p>Los fines de semana se llena. Reserva al momento en TheFork o mándanos tu petición por WhatsApp y te confirmamos.</p>
+      </div>
+      <div class="book">
+        <div class="panel">
+          <span class="label">Confirmación al instante</span>
+          <h3>Reserva en TheFork</h3>
+          <p>Elige día, hora y comensales y recibe la confirmación en el momento.</p>
+          <a class="btn btn-red" id="thefork" href="https://www.thefork.es/" target="_blank" rel="noopener">Reservar en TheFork</a>
+          <div class="phone">
+            <span class="label" style="width:100%">¿Prefieres llamar?</span>
+            <strong id="tel">961 08 99 41</strong>
+            <button class="copy" type="button" id="copyTel">Copiar</button>
+          </div>
+        </div>
+        <div class="panel">
+          <span class="label">Te respondemos por WhatsApp</span>
+          <h3>Pídela por WhatsApp</h3>
+          <form class="form" id="waForm" novalidate>
+            <div class="field full"><label for="wName">Nombre</label><input id="wName" autocomplete="name" placeholder="Tu nombre"></div>
+            <div class="field"><label for="wDate">Día</label><input id="wDate" type="date"></div>
+            <div class="field"><label for="wTime">Hora</label><select id="wTime"></select></div>
+            <div class="field"><label for="wPax">Personas</label><select id="wPax"></select></div>
+            <div class="field"><label for="wZone">Zona</label><select id="wZone"><option>Me da igual</option><option>Terraza</option><option>Interior</option></select></div>
+            <div class="field full"><label for="wNotes">Comentarios (opcional)</label><textarea id="wNotes" placeholder="Trona, celebración, alergias…"></textarea></div>
+            <p class="err" id="wErr" hidden></p>
+            <button class="btn btn-wa" type="submit">Enviar por WhatsApp</button>
+          </form>
+          <p style="font-size:.85rem">Se abrirá WhatsApp con el mensaje escrito. La reserva queda confirmada cuando te respondamos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="visitanos">
+    <div class="wrap">
+      <div class="sec-head"><h2 class="ribbon"><span class="r-edge"><span class="r-fill">Visítanos</span></span><span class="r-sub">Plaça de la Llibertat, 13</span></h2></div>
+      <div class="visit">
+        <figure class="visit-photo"><img src="img/fachada-vertical.jpg" alt="Entrada de La Trinchera con mesas de terraza" width="335" height="597"></figure>
+        <dl class="facts">
+          <div><dt class="label">Dirección</dt><dd>Plaça de la Llibertat, 13<br>46900 Torrent, Valencia</dd></div>
+          <div><dt class="label">Teléfono</dt><dd>961 08 99 41</dd></div>
+          <div><dt class="label">Horario</dt><dd>Pendiente de confirmar con el local</dd></div>
+          <div><dt class="label">Pago</dt><dd>Tarjeta y Ticket Restaurant</dd></div>
+          <div><a class="btn btn-line" href="https://www.google.com/maps/search/?api=1&query=Cervecer%C3%ADa+La+Trinchera+Pla%C3%A7a+de+la+Llibertat+13+Torrent" target="_blank" rel="noopener">Cómo llegar</a></div>
+        </dl>
+        <div class="quotes">
+          <blockquote class="quote"><p>Calidad y trato de primera. Tienen una gran variedad de platos. Es un sitio más informal con un ambiente más distendido.</p><footer>Cristian · Google</footer></blockquote>
+          <blockquote class="quote"><p>Destacar la atención y amabilidad de las chicas que nos atendieron y lo bien que nos recomendaron las cervezas de tirador.</p><footer>Lorena · Google</footer></blockquote>
+          <blockquote class="quote"><p>Cena buenísima, a un precio aceptable. Volveremos seguro.</p><footer>Vicenta · Google</footer></blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <img src="img/logo.jpg" alt="La Trinchera: hamburguesería, tapas y carnes a la brasa" width="96" height="96">
+    <nav aria-label="Legal">
+      <a href="#inicio">Aviso legal</a>
+      <a href="#inicio">Privacidad</a>
+      <a href="#inicio">Cookies</a>
+    </nav>
+    <small>© 2026 Cervecería La Trinchera · Torrent (Valencia)</small>
+  </div>
+</footer>
+
+<div class="bar">
+  <a class="btn btn-red" href="#reservas">Reservar</a>
+  <a class="btn btn-wa" id="barWa" href="#reservas" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+// Datos del local: cambiar aquí cuando el cliente los confirme
+const WHATSAPP = "34961089941";               // número con WhatsApp del local (el 961 es fijo: confirmar)
+const THEFORK_URL = "https://www.thefork.es/"; // sustituir por la ficha de La Trinchera en TheFork
+
+document.getElementById("thefork").href = THEFORK_URL;
+document.getElementById("barWa").href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent("Hola, quería reservar mesa en La Trinchera.");
+
+const TAPS = [
+  {n:"Franziskaner", s:"Weissbier · trigo alemana", abv:"5,0 %", c:"#f2efe6", t:"#1e3f8a"},
+  {n:"Leffe Blonde", s:"Abadía belga rubia", abv:"6,6 %", c:"#e3a33a", t:"#3b230f"},
+  {n:"Leffe Brune",  s:"Abadía belga tostada", abv:"6,5 %", c:"#5a3820", t:"#f3dfb8"},
+  {n:"Leffe Rossa",  s:"Abadía belga roja", abv:"6,6 %", c:"#b8402f", t:"#f7e3c8"},
+  {n:"Budweiser",    s:"Lager americana", abv:"5,0 %", c:"#c8102e", t:"#ffffff"}
+];
+document.getElementById("taps").innerHTML = TAPS.map(b =>
+  `<li class="tap"><span class="disc" style="background:${b.c};color:${b.t}" aria-hidden="true">${b.n[0]}</span>
+   <div><h3>${b.n}</h3><p>${b.s}</p></div><span class="abv">${b.abv}</span></li>`).join("");
+
+const MENU = [
+  {id:"burgers", t:"Burgers", note:"Carne de ternera de 200 g o carne madurada. Las hamburguesas no se pueden modificar.", items:[
+    ["Korea","10,90","Ternera 200 g, pepinillos, salsa Emmy y bacon."],
+    ["Trinchera","10,90","Ternera 200 g, salsa Trinchera, crema de berenjena, cebolla y queso de cabra."],
+    ["Americana","10,90","Ternera 200 g, lechuga, tomate, salsa Trinchera, cheddar, bacon y cebolla caramelizada."],
+    ["Cal y arena","10,90","Ternera 200 g, jamón, queso de cabra, confitura de tomate y mezclum."],
+    ["Red","10,90","Ternera 200 g, salsa suave de pimiento ahumado, huevo frito y patatas paja."],
+    ["Jalisco","10,90","Solo para valientes. Ternera 200 g, crema de queso, jalapeños, cebolla roja, salsa picante y huevo frito."],
+    ["Smoke","10,90","Ternera 200 g, pepinillos, cebolla roja, cheddar, bacon y salsa ahumada."],
+    ["Pepper","10,90","Ternera 200 g, champiñones, cheddar, salsa de pimienta verde y bacon."],
+    ["Sriracha","10,90","Ternera 200 g, salsa sriracha, pepinillos, cheddar y cebolla crujiente."],
+    ["Onion BBQ","11,90","Ternera 200 g, salsa barbacoa, cheddar, bacon y aros de cebolla."],
+    ["Normanda","12,50","Ternera 200 g, salsa de camembert e higos con jalapeños y crujiente de patata."],
+    ["Old Sweet Liset","13,90","Carne madurada, cheddar, salsa de torrezno, salsa smoke y crujiente de nachos."],
+    ["Chicharrona","13,90","Carne madurada, salsa de torrezno, relish de cebollita y pepinillo, salsa smoke y crujiente de nachos."],
+    ["La Madurada","13,90","Carne madurada 200 g, cheddar, bacon, pepinillo y cebolla roja.","Hasta fin de existencias"],
+    ["Cenicienta","14,90","Carne madurada 200 g, calabaza confitada, bacon y queso brie."],
+    ["1313","14,90","Carne madurada 200 g, mahonesa de piparras, cheddar y bacon."],
+    ["Cardiaca","14,90","Doble de carne, cheddar, bacon y salsa barbacoa."],
+    ["Emi 2.0","15,90","Carne madurada 200 g, cebolla caramelizada, salsa Emi, bacon, salsa de camembert y cebolla crujiente."],
+    ["Cheeseburger","7,50","Carne y queso. Ideal para los peques.","Infantil"]
+  ]},
+  {id:"tapas", t:"Tapas", note:"Para empezar y para compartir.", items:[
+    ["Gilda clásica","2,00"],["Sardina ahumada","3,50","Con queso crema, confitura de tomate y sriracha suave."],["Croqueta de cocido","3,00","Por unidad."],
+    ["Taco de ensaladilla con anchoa","4,50"],["Tostada de foie","5,00"],["Patatas bravas","5,90"],["Champiñones a la plancha","6,50"],
+    ["Ensaladilla rusa","7,00"],["Torrezno de Soria","7,50"],["Tiras de pollo crunch","7,90"],["Oreja a la plancha","8,00"],
+    ["Buñuelos de bacalao","8,00"],["Patatas con salsa de queso y chicharrones","9,00"],["Chipirones a la plancha","9,90"],
+    ["Quesadilla de serrano y quesos","9,90","Con salsa de tomate."],["Provolone con tomate y orégano","11,90"],["Queso curado","12,00"],
+    ["Mollejas de ternera","14,00"],["Sepionet a la plancha","14,90"],["Tabla de quesos","15,00"],
+    ["Nachos","16,00","Con guacamole, mezcla de carne y queso."],["Gambas a la plancha","18,00"],["Jamón ibérico","19,00"],["Jamón ibérico y queso curado","19,00"]
+  ]},
+  {id:"brasa", t:"Carnes a la brasa", note:"Acompáñalas con nuestra sangría de cava (25 €).", items:[
+    ["Pollo a la brasa","10,90"],["Conejo a la brasa","13,50"],["Costilla BBQ a baja temperatura","14,00"],
+    ["Secreto de cerdo con salsa de pimienta","14,90"],["Cordero en salsa tikka masala","15,00"],["Pierna de cordero al horno","18,00"],
+    ["Pluma de cerdo ibérico","19,00"],["Entrecot de lomo alto","21,00"],["Chuletón de carne madurada 45 días","60,00 / kg"],["Wagyu","120,00 / kg"]
+  ]},
+  {id:"firma", t:"Firma propia", note:"Combinaciones de la casa que no admiten modificaciones. Disfrútalas tal cual.", items:[
+    ["Ostra","2,50","Por unidad."],["Ajo arriero","8,00"],["Trufada","11,90","Ternera 200 g, tomate, salsa de trufa, jamón y setas."],
+    ["Garbanzos marineros","12,00"],["Tuétano al horno con alcachofas y jamón","15,00"],
+    ["Duck 2.0","15,00","Salsa dulce de boniato, foie fresco, confitura de higos y mezclum."],["Calamar de playa a la plancha","25,00"]
+  ]},
+  {id:"ensaladas", t:"Ensaladas", items:[
+    ["Tomate con atún","10,00"],
+    ["Greta","12,50","Mezclum de lechugas, tomate cherry, maíz, nueces, aguacate, queso de cabra y vinagreta de pimiento y cebolla."],
+    ["César","12,50","Lechuga, tomate cherry, parmesano, salsa César, pollo crujiente, maíz, bacon y cebolla crujiente."]
+  ]},
+  {id:"sandwiches", t:"Sándwiches", items:[
+    ["Mixto de york y queso","6,00"],["Serranito","7,00","Con serrano, manchego y tomate natural."],
+    ["Granjero","9,90","Lechuga, tomate, pollo, york y queso, bacon y mahonesa."],
+    ["Costero","9,90","Lechuga, tomate, cebolla caramelizada, queso brie, bacon, huevo y salsa Trinchera."]
+  ]},
+  {id:"postres", t:"Postres", items:[
+    ["Piña natural","5,00"],["Coulant de chocolate con helado","5,00"],["Tarta de Toblerone con helado de avellana","5,00"],["Irish cream","5,00"],
+    ["Tarta de pistacho","6,00"],["Tarta de Lotus","6,00"],["Tarta de queso con arándanos","6,00"]
+  ]},
+  {id:"vinos", t:"Vinos", note:"Precio por botella.", groups:[
+    ["Tintos · Ribera del Duero",[["Valdehermoso","18,00","Tinta del país, 9 meses en barrica de roble."],["Traslascuestas","18,00","Tinta fina, 8 meses en barrica de roble."],["El Mirón de Prado Rey","20,00","Tempranillo, albillo mayor y merlot, 10 meses en barrica."],["Valdehermoso Crianza","22,00","Tinta del país, 18 meses en barrica de roble."],["Prado Rey Crianza","24,00","Tinta fina, cabernet y merlot, 12 meses en barrica."],["Valderiz","28,00","Tinta del país, 22 meses en barrica de roble."],["Adaro","32,00","Tinta fina, 12 meses en barrica de roble."]]],
+    ["Tintos · Rioja",[["Marqués de Cáceres Bio","16,00","Tempranillo y graciano."],["Excellens Cuvée","18,00","Tempranillo, 14 meses en barrica de roble."],["Baigorri","20,00","Tempranillo, 14 meses en barrica de roble."]]],
+    ["Tintos · Valencianos",[["Bobal en Calma","16,00","D.O. Utiel-Requena. Bobal, 9 meses en tinaja."],["Rafa Cañizares","18,00","D.O. Alicante. Syrah, 10 meses en tinaja."]]],
+    ["Blancos",[["Tarima Mediterráneo","15,00","D.O. Alicante. Moscatel y merseguera."],["Marqués de Cáceres","16,00","D.O. Rueda. Verdejo."],["Marqués de Vizhoja","16,00","Vino de Galicia. Albariño, treixadura y loureiro."],["Barón de Ley semidulce","17,00","D.O. Rioja. Sauvignon blanc."],["Hacienda Ucediños","17,00","D.O. Valdeorras. Godello."]]],
+    ["Rosados y cavas",[["Excellens Rosé","16,00","D.O. Rioja. Tempranillo y garnacha."],["Cava Nº 29","18,00","Macabeo y xarel·lo."]]]
+  ]}
+  ,{id:"sugerencias", t:"Fuera de carta", note:"Según mercado. Pregunta por las sugerencias del día.", items:[
+    ["Zamburiñas","20,00"]
+  ]}
+];
+
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fold = s => s.normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+const itemHTML = ([n,p,d,tag]) => `<li class="item"><div class="row"><span class="name">${esc(n)}${tag?`<span class="tag">${esc(tag)}</span>`:""}</span><span class="dots"></span><span class="price">${esc(p)} €</span></div>${d?`<p class="desc">${esc(d)}</p>`:""}</li>`;
+const ALLERGENS = `<p class="allergens">Disponemos de la información de alérgenos de cada plato. Pídela al personal antes de pedir.</p>`;
+
+let current = "burgers";
+try { current = localStorage.getItem("trinchera-tab") || current; } catch(e) {}
+if (!MENU.some(s => s.id === current)) current = "burgers";
+
+const tabs = document.getElementById("tabs"), menu = document.getElementById("menu"), q = document.getElementById("q");
+tabs.innerHTML = MENU.map(s => `<button class="tab" role="tab" id="tab-${s.id}" data-id="${s.id}">${esc(s.t)}</button>`).join("");
+
+function groupsOf(s){ return s.groups ? s.groups : [[null, s.items]]; }
+function render(){
+  const term = fold(q.value.trim());
+  tabs.querySelectorAll(".tab").forEach(b => b.setAttribute("aria-selected", String(!term && b.dataset.id === current)));
+  if (term) {
+    let html = "", hits = 0;
+    MENU.forEach(s => groupsOf(s).forEach(([g, items]) => {
+      const m = items.filter(i => fold(i[0] + " " + (i[2]||"")).includes(term));
+      if (m.length) { hits += m.length; html += `<div class="menu-group"><h4>${esc(s.t)}${g?" · "+esc(g):""}</h4><ul class="items">${m.map(itemHTML).join("")}</ul></div>`; }
+    }));
+    menu.innerHTML = `<h3>Resultados</h3><p class="note">${hits} ${hits===1?"plato":"platos"} con «${esc(q.value.trim())}»</p>` + (hits ? html : `<p class="empty">No hay platos con ese nombre o ingrediente. Prueba con otra palabra.</p>`) + ALLERGENS;
+    return;
+  }
+  const s = MENU.find(x => x.id === current);
+  menu.setAttribute("aria-labelledby", "tab-" + s.id);
+  menu.innerHTML = `<h3>${esc(s.t)}</h3>${s.note?`<p class="note">${esc(s.note)}</p>`:""}` +
+    groupsOf(s).map(([g, items]) => `<div class="menu-group">${g?`<h4>${esc(g)}</h4>`:""}<ul class="items">${items.map(itemHTML).join("")}</ul></div>`).join("") + ALLERGENS;
+}
+tabs.addEventListener("click", e => {
+  const b = e.target.closest(".tab"); if (!b) return;
+  current = b.dataset.id; q.value = "";
+  try { localStorage.setItem("trinchera-tab", current); } catch(e) {}
+  render();
+});
+q.addEventListener("input", render);
+render();
+
+// Formulario de WhatsApp
+const wDate = document.getElementById("wDate"), wTime = document.getElementById("wTime"), wPax = document.getElementById("wPax");
+const today = new Date(); const iso = d => d.toISOString().slice(0,10);
+const tomorrow = new Date(today); tomorrow.setDate(today.getDate()+1);
+wDate.min = iso(today); wDate.value = iso(tomorrow);
+const times = []; ["13:00","13:30","14:00","14:30","15:00","20:00","20:30","21:00","21:30","22:00","22:30"].forEach(t => times.push(t));
+wTime.innerHTML = times.map(t => `<option${t==="21:00"?" selected":""}>${t}</option>`).join("");
+wPax.innerHTML = Array.from({length:12},(_,i)=>i+1).map(n => `<option value="${n}"${n===4?" selected":""}>${n} ${n===1?"persona":"personas"}</option>`).join("") + `<option value="Más de 12">Más de 12</option>`;
+
+document.getElementById("waForm").addEventListener("submit", e => {
+  e.preventDefault();
+  const err = document.getElementById("wErr");
+  const name = document.getElementById("wName").value.trim();
+  if (!name) { err.textContent = "Escribe tu nombre para que sepamos a quién guardar la mesa."; err.hidden = false; return; }
+  if (!wDate.value || wDate.value < iso(today)) { err.textContent = "Elige un día a partir de hoy."; err.hidden = false; return; }
+  err.hidden = true;
+  const [y,m,d] = wDate.value.split("-");
+  const notes = document.getElementById("wNotes").value.trim();
+  const msg = `Hola, soy ${name}. Quería reservar mesa en La Trinchera:\n` +
+    `• Día: ${d}/${m}/${y}\n• Hora: ${wTime.value}\n• Personas: ${wPax.value}\n• Zona: ${document.getElementById("wZone").value}` +
+    (notes ? `\n• Comentarios: ${notes}` : "") + `\n¡Gracias!`;
+  const a = document.createElement("a");
+  a.href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(msg);
+  a.target = "_blank"; a.rel = "noopener"; document.body.appendChild(a); a.click(); a.remove();
+});
+
+document.getElementById("copyTel").addEventListener("click", e => {
+  const btn = e.currentTarget;
+  navigator.clipboard.writeText("961089941").then(() => { btn.textContent = "Copiado"; setTimeout(()=>btn.textContent="Copiar",1800); })
+    .catch(() => { const r = document.createRange(); r.selectNodeContents(document.getElementById("tel")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); });
+});
+</script>
+
+</body></html>
