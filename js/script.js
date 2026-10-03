@@ -152,7 +152,9 @@ const menu = [
 
 const categoryLinks = document.querySelector("#category-links");
 const menuSections = document.querySelector("#menu-sections");
-const initialCategory = menu.find((category) => `#${category.id}` === window.location.hash) || menu[0];
+const initialCategory = window.location.hash
+  ? menu.find((category) => `#${category.id}` === window.location.hash)
+  : menu[0];
 
 function sentenceCase(text) {
   return text.toLocaleLowerCase("es")
@@ -290,13 +292,12 @@ function renderCategory(category) {
   return section;
 }
 
-menu.forEach((category, index) => {
+menu.forEach((category) => {
   const link = document.createElement("a");
   link.className = "category-link";
   link.href = `#${category.id}`;
-  link.dataset.number = String(index + 1).padStart(2, "0");
   link.textContent = sentenceCase(category.title.replace(/^Las |^Los /i, ""));
-  if (category.id === initialCategory.id) {
+  if (initialCategory && category.id === initialCategory.id) {
     link.setAttribute("aria-current", "location");
   }
   categoryLinks.append(link);
@@ -308,15 +309,29 @@ const categoryObserver = new IntersectionObserver((entries) => {
     if (!entry.isIntersecting) return;
 
     categoryLinks.querySelectorAll(".category-link").forEach((link) => {
-      if (link.hash === `#${entry.target.id}`) {
+      if (entry.target.classList.contains("menu-section") && link.hash === `#${entry.target.id}`) {
         link.setAttribute("aria-current", "location");
       } else {
         link.removeAttribute("aria-current");
       }
     });
   });
-}, { rootMargin: "-20% 0px -68% 0px" });
+}, { rootMargin: "-12% 0px -68% 0px" });
 
 menuSections.querySelectorAll(".menu-section").forEach((section) => {
   categoryObserver.observe(section);
 });
+
+const reviewsSection = document.querySelector("#opiniones");
+
+function clearCategoryAtReviews() {
+  const navHeight = document.querySelector(".category-nav").getBoundingClientRect().height;
+  if (reviewsSection.getBoundingClientRect().top > navHeight + 64) return;
+
+  categoryLinks.querySelectorAll(".category-link[aria-current]").forEach((link) => {
+    link.removeAttribute("aria-current");
+  });
+}
+
+window.addEventListener("scroll", clearCategoryAtReviews, { passive: true });
+clearCategoryAtReviews();
