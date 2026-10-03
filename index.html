@@ -10,13 +10,16 @@
             box-sizing: border-box;
         }
 
+        html {
+            min-height: 100%;
+        }
+
         body {
             margin: 0;
             min-height: 100vh;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 30px 20px;
+            flex-direction: column;
+            padding: 30px 20px 0;
             background: #f4eee6;
             color: #25211e;
             font-family: Arial, sans-serif;
@@ -25,6 +28,11 @@
         .container {
             width: 100%;
             max-width: 700px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 auto;
             text-align: center;
         }
 
@@ -82,13 +90,76 @@
             font-size: 1.3rem;
         }
 
+        /* FOOTER */
+
+        .site-footer {
+            width: 100%;
+            margin-top: 50px;
+            padding: 28px 20px 10px;
+            text-align: center;
+            border-top: 1px solid rgba(37, 33, 30, 0.12);
+            color: #25211e;
+        }
+
+        .site-footer p {
+            margin: 0 0 8px;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            opacity: 0.7;
+        }
+
+        .site-footer .designer-name {
+            font-weight: 600;
+            opacity: 0.9;
+        }
+
+        .site-footer .contact-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px 16px;
+            margin-top: 8px;
+        }
+
+        .site-footer a {
+            color: inherit;
+            font-size: 0.8rem;
+            text-decoration: none;
+            opacity: 0.7;
+            transition: opacity 0.2s ease;
+        }
+
+        .site-footer a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        .site-footer .separator {
+            opacity: 0.25;
+        }
+
         @media (max-width: 600px) {
+
+            body {
+                padding: 20px 16px 0;
+            }
+
             .options {
                 grid-template-columns: 1fr;
             }
 
             .option {
                 min-height: 140px;
+            }
+
+            .site-footer {
+                margin-top: 40px;
+                padding: 24px 16px 8px;
+            }
+
+            .site-footer .contact-links {
+                gap: 6px 12px;
             }
         }
     </style>
@@ -118,93 +189,43 @@
         </section>
 
     </main>
+
+    <footer class="site-footer">
+
+        <p>
+            Diseño y desarrollo web por
+            <span class="designer-name">Emiliana Amaro</span>
+        </p>
+
+        <p>
+            Diseño de carta digital · Desarrollo Frontend
+        </p>
+
+        <div class="contact-links">
+
+            <a href="mailto:emilianamaro@hotmail.com">
+                Email
+            </a>
+
+            <span class="separator">·</span>
+
+            <a href="https://www.linkedin.com/in/emiamaro/"
+               target="_blank"
+               rel="noopener noreferrer">
+                LinkedIn
+            </a>
+
+            <span class="separator">·</span>
+
+            <a href="https://emilianamaro.github.io/PF/"
+               target="_blank"
+               rel="noopener noreferrer">
+                Portfolio
+            </a>
+
+        </div>
+
+    </footer>
+
 </body>
-<style>
-    .site-footer {
-        width: 100%;
-        margin-top: 70px;
-        padding: 28px 20px 10px;
-        text-align: center;
-        border-top: 1px solid rgba(37, 33, 30, 0.12);
-        color: #25211e;
-    }
-
-    .site-footer p {
-        margin: 0 0 8px;
-        font-size: 0.85rem;
-        line-height: 1.6;
-        opacity: 0.7;
-    }
-
-    .site-footer .designer-name {
-        font-weight: 600;
-        opacity: 0.9;
-    }
-
-    .site-footer .contact-links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 8px 16px;
-        margin-top: 8px;
-    }
-
-    .site-footer a {
-        color: inherit;
-        font-size: 0.8rem;
-        text-decoration: none;
-        opacity: 0.7;
-        transition: opacity 0.2s ease;
-    }
-
-    .site-footer a:hover {
-        opacity: 1;
-        text-decoration: underline;
-    }
-
-    .site-footer .separator {
-        opacity: 0.25;
-    }
-
-    @media (max-width: 600px) {
-        .site-footer {
-            margin-top: 50px;
-            padding: 24px 16px 8px;
-        }
-
-        .site-footer .contact-links {
-            gap: 6px 12px;
-        }
-    }
-</style>
-
-<footer class="site-footer">
-    <p>
-        Diseño y desarrollo web por
-        <span class="designer-name">Emiliana Amaro</span>
-    </p>
-
-    <p>
-        Diseño de carta digital · Desarrollo Frontend
-    </p>
-
-    <div class="contact-links">
-        <a href="mailto:emilianamaro@hotmail.com">
-            Email
-        </a>
-
-        <span class="separator">·</span>
-
-        <a href="www.linkedin.com/in/emiamaro" target="_blank" rel="noopener noreferrer">
-            LinkedIn
-        </a>
-
-        <span class="separator">·</span>
-
-        <a href="https://emilianamaro.github.io/PF/" target="_blank" rel="noopener noreferrer">
-            Portfolio
-        </a>
-    </div>
-</footer>
 </html>
